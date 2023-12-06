@@ -12,7 +12,7 @@ public class DepartementHashSet implements IDepartement<Departement>{
     @Override
     public boolean rechercherDepartement(String nom) {
         for(Departement d : Departements){
-            if(d.getNom().equals(nom))
+            if(d.getNomDepartement().equals(nom))
                 return true;
         }
 
@@ -34,7 +34,7 @@ public class DepartementHashSet implements IDepartement<Departement>{
         if(rechercherDepartement(departement) == true)
             Departements.remove(departement);
         else
-            System.out.println("Departement " + departement.getNom() + " n'existe pas.");
+            System.out.println("Departement " + departement.getNomDepartement() + " n'existe pas.");
     }
 
     @Override

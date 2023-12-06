@@ -21,11 +21,11 @@ public class Departement implements Comparable<Departement> {
         this.Id = Id;
     }
 
-    public String getNom() {
+    public String getNomDepartement() {
         return nom;
     }
 
-    public void setNom(String nom) {
+    public void setNomDepartement(String nom) {
         this.nom = nom;
     }
 
@@ -41,7 +41,7 @@ public class Departement implements Comparable<Departement> {
     public boolean equals(Object obj){
         if(obj == null) return false;
         if(obj instanceof Departement d){
-            return Id == d.getId() && nom.equals(d.getNom());
+            return Id == d.getId() && nom.equals(d.getNomDepartement());
         }
         return false;
     }
